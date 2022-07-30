@@ -1,0 +1,92 @@
+<div class="max-w-4xl text-white mark">
+    <div id="page" class=" bg-no-repeat" style="
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    z-index: -1;
+    background-position: center;
+    background-image: url('{{ section.settings.background_cover_image | img_url: "1300x" }}'
+          )">
+    </div>
+   
+    <div id="page" class="hello" style="position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%; 
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    ">
+    </div>
+    <div >
+    <div class="text-9xl font-bold my-4">{{ section.settings.title }}</div>
+    <div class="text-9xl font-bold my-4">{{ section.settings.lost_title }}</div>
+    <div class="my-4">
+        <p class="text-base md:text-xl leading-normal">{{ section.settings.subtext_title }}</p>
+    </div>
+    <div style="
+   
+    z-index: 2;">
+
+
+    <div class="my-10">
+        {% if section.settings.button_url == blank %}
+            {% assign shop_url = shop.secure_url %}
+        {% else %}
+            {% assign shop_url = section.settings.button_url %}
+        {% endif %}
+        <a href="{{ shop_url }}" class="px-4  inline py-4 text-base font-medium shadow bg-black rounded-md hover:bg-green-800 text-white">{{ section.settings.button_label }}</a>
+    </div>
+</div>
+</div>
+
+
+{% schema %}
+
+{
+    "name": "Template 404",
+    "tag": "section",
+    "class": "flex items-center justify-center text-center py-7 h-full",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "default": "404",
+            "label": "404 Heading Title"
+        },
+        {
+            "type": "text",
+            "id": "lost_title",
+            "default": "ARE YOU LOST?",
+            "label": "404  Title"
+        },
+        {
+            "type": "text",
+            "id": "subtext_title",
+            "default": "The page that you're looking for is not found",
+            "label": "404 Subtext Title"
+        },
+        {
+            "type": "text",
+            "id": "button_label",
+            "default": "Back to homepage",
+            "label": "Button Label"
+        },
+        {
+            "type": "url",
+            "id": "button_url",
+            "label": "Button URL"
+        },
+        {
+            "type": "image_picker",
+            "id": "background_cover_image",
+            "label": "Cover Image" 
+          }
+       
+    ]
+}
+{% endschema %}

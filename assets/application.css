@@ -1,4 +1,4 @@
-/*! tailwindcss v2.2.16 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v2.2.7 | MIT License | https://tailwindcss.com */
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
@@ -50,7 +50,6 @@ Remove the margin in all browsers.
 
 body {
   margin: 0;
-  
 }
 
 /**
@@ -476,18 +475,6 @@ button,
   cursor: pointer;
 }
 
-/**
- * Override legacy focus reset from Normalize with modern Firefox focus styles.
- *
- * This is actually an improvement over the new defaults in Firefox in our testing,
- * as it triggers the better focus styles even for links, which still use a dotted
- * outline in Firefox by default.
- */
-
-:-moz-focusring {
-  outline: auto;
-}
-
 table {
   border-collapse: collapse;
 }
@@ -737,7 +724,6 @@ video {
 }
 
 .sticky {
-  position: -webkit-sticky;
   position: sticky;
 }
 
@@ -6326,6 +6312,10 @@ video {
 
 .h-80 {
   height: 20rem;
+}
+
+.h-94 {
+  height: 22rem;
 }
 
 .h-96 {
@@ -32383,7 +32373,6 @@ video {
   }
 
   .sm\:sticky {
-    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -37972,6 +37961,10 @@ video {
 
   .sm\:h-80 {
     height: 20rem;
+  }
+
+  .sm\:h-94 {
+    height: 22rem;
   }
 
   .sm\:h-96 {
@@ -63611,7 +63604,6 @@ video {
   }
 
   .md\:sticky {
-    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -69200,6 +69192,10 @@ video {
 
   .md\:h-80 {
     height: 20rem;
+  }
+
+  .md\:h-94 {
+    height: 22rem;
   }
 
   .md\:h-96 {
@@ -94839,7 +94835,6 @@ video {
   }
 
   .lg\:sticky {
-    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -100428,6 +100423,10 @@ video {
 
   .lg\:h-80 {
     height: 20rem;
+  }
+
+  .lg\:h-94 {
+    height: 22rem;
   }
 
   .lg\:h-96 {
@@ -126067,7 +126066,6 @@ video {
   }
 
   .xl\:sticky {
-    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -131656,6 +131654,10 @@ video {
 
   .xl\:h-80 {
     height: 20rem;
+  }
+
+  .xl\:h-94 {
+    height: 22rem;
   }
 
   .xl\:h-96 {
@@ -157295,7 +157297,6 @@ video {
   }
 
   .\32xl\:sticky {
-    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -162884,6 +162885,10 @@ video {
 
   .\32xl\:h-80 {
     height: 20rem;
+  }
+
+  .\32xl\:h-94 {
+    height: 22rem;
   }
 
   .\32xl\:h-96 {
